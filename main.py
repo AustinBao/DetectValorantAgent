@@ -44,8 +44,8 @@ while True:
     # Move mouse to the center of "Body"
     new_img = cv2.imread(predict_img_path)
     img_height, img_width = new_img.shape[0], new_img.shape[1]
-    xc, yc = XandYofBox("C:/OpenCV/ValorantDetection/runs/detect/predict/labels/image0.txt")
-    pyautogui.moveTo(xc*img_width, yc*img_height)
+    # xc, yc = XandYofBox("C:/OpenCV/ValorantDetection/runs/detect/predict/labels/image0.txt")
+    # pyautogui.moveTo(xc*img_width, yc*img_height)
 
     # turn Yolo predicted img to RGB img and display
     img = Image.open(predict_img_path)
